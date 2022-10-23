@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEWORK</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body style="background: #E5E5E5;">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="Username" id="username" style="background:#98FB98 ">
+
+                    <input type="text" class="form-control mt-3" placeholder="Surname" id="surname" style="background: #FFB6C1">
+
+                    <input type="date" class="form-control mt-3" placeholder="mm/dd/yyyy" id="userdate" style="background:#66CDAA ">
+                    <select class="form-control mt-3" id="action" style="background: #EE82EE ">
+                        <option></option>
+                        <option value="kontract">KONTRAKT</option>
+                        <option value="grant">GRANT</option>
+                    </select>
+                </div>
+                <div class="card-footer" style="background: #E0FFFF">
+                    <button type="button" class="btn btn-primary ml-auto d-block"  onclick="highOne()">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <table class="table table-hover table-striped mt-3" style="background: #DA70D6">
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Ism</th>
+                        <th>Familiya</th>
+                        <th>Tugilgan Sana</th>
+                        <th>Oqish turi</th>
+                        <th>Amal</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody id="result"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
